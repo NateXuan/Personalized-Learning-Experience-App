@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="selected_color">#FFEB3B</color>
+    <color name="unselected_color">#000000</color>
+    <color name="task_due_background">#94BAFF</color>
+    <color name="task_due_text">#000E57</color>
+    <color name="dark_gray">#666666</color>
+    <color name="view_task">#E400B0FF</color>
+    <color name="correct_answer_color">#00A907</color>
+    <color name="wrong_answer_color">#F44336</color>
+</resources>

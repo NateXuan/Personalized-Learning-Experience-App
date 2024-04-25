@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Interests"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/maxChoices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You may select max 4 topics."
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="10dp"
+        android:alignmentMode="alignMargins"
+        android:layout_below="@id/maxChoices"
+        android:columnOrderPreserved="false">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_margin="5dp"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Algorithm"
+            android:background="@drawable/selector_interest_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_margin="5dp"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Data Structures"
+            android:background="@drawable/selector_interest_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_margin="5dp"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Web Development"
+            android:background="@drawable/selector_interest_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_margin="5dp"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Testing"
+            android:background="@drawable/selector_interest_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <!-- Selected state with thicker border -->
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/> <!-- background color when selected -->
+            <stroke android:width="4dp" android:color="#000000"/> <!-- thick border when selected -->
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <item>
+        <!-- Default state -->
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/> <!-- default background color -->
+            <stroke android:width="1dp" android:color="#000000"/> <!-- default border color -->
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+</selector>
